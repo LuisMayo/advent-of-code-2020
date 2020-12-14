@@ -4,7 +4,7 @@ let lines = input.replaceAll('\r', '').split('\n'); // Be careful with different
 class CPU {
     accumulator = 0;
     PC = 0;
-    // This array will containe for a index a boolean value indicating wheter we've already executed the instruction at that offset
+    // This array will contain for a index a boolean value indicating whether we've already executed the instruction at that offset
     doneInstructions: boolean[] = []; 
 
     constructor(private codedInstructions: string[]) { }
